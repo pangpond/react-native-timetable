@@ -89,7 +89,7 @@ You can choose to pass either `eventGroups`  or `events` to make timetable event
 | `eventOnPress` | `(event) => any` | (Optional) On press function for an event card, event object will be passed as parameter |
 | `eventColors` | `string[]`            | (Optional) Event card colors in `rgba` |
 | `configs`       | [`Configs`](#Configs) | (Optional) Configurations like `numOfDays`, `startHour`, `timeTickWidth` |
-| `headerStyles` | `ViewStyle` | (Optional) Header styles |
+| `headerStyle` | `ViewStyle` | (Optional) Header styles |
 | `contentContainerStyle` | `ViewStyle` | (Optional) Event cards container styles |
 
 ### Configs
