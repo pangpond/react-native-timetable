@@ -5,7 +5,7 @@ import type { PropsWithConfigs } from 'src/types';
 import { COLORS, WEEKDAYS } from '../utils/constants';
 
 export default function WeekdayText({ configs }: PropsWithConfigs<{}>) {
-  const { cellWidth, numOfDays } = configs;
+  const { cellWidth, numOfDays, locale } = configs;
   const currentDay = new Date();
   const currentWeekday = currentDay.getDay() ? currentDay.getDay() : 7;
   const styles = getStyles({ cellWidth });
@@ -24,7 +24,7 @@ export default function WeekdayText({ configs }: PropsWithConfigs<{}>) {
                 currentWeekday === day && styles.weekdayTextHighlight,
               ]}
             >
-              {`${WEEKDAYS[day - 1]} ${thatDay.getDate()}`}
+              {`${WEEKDAYS[locale || 'en'][day - 1]} ${thatDay.getDate()}`}
             </Text>
           </View>
         );

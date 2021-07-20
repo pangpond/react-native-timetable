@@ -36,6 +36,7 @@ interface Configs {
   numOfDays: number;
   numOfDaysPerPage: number;
   timeTicksWidth: number;
+  locale?: string;
 }
 
 type PropsWithConfigs<T> = T & {
