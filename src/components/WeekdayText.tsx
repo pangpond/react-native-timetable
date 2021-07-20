@@ -42,7 +42,7 @@ const getStyles = ({ cellWidth }) =>
       alignItems: 'center',
     },
     weekdayTextHighlight: {
-      COLORS.surface,
+      color: COLORS.surface,
       fontWeight: 'bold',
     },
     weekdayText: {
